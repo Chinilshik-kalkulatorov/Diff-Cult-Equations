@@ -12,7 +12,7 @@ This project contains Python code for solving basic differential equations using
 
 1. Clone the repository:
     ```
-    git clone https://github.com/Chinilshik-kalkulatorov/Diff-Cult-Equations.git
+    git clone https://github.com/yourusername/Diff-Cult-Equations.git
     ```
 
 2. Navigate to the project directory:
@@ -42,16 +42,37 @@ Choose the type of differential equation to solve:
 1. First-order linear ODE (dy/dt = a*y + b)
 2. Second-order linear ODE (d2y/dt2 = a*y + b*dy + c)
 Enter 1 or 2: 1
-Enter the coefficients for the differential equation dy/dt = a*y + b:
-a: 2
-b: 3
-Enter the initial condition y(0): 1
+Enter the coefficient a: 1
+Enter the coefficient b: 2
+Enter the initial condition y(0): 0
 ```
 
 ### Sample Output for First-order ODE
+For the input coefficients a = 1, b = 2, and the initial condition y(0) = 0, the solution of the first-order differential equation dy/dt = y + 2 is:
 ```
-A plot showing the solution of the first-order differential equation over time.
+y(t) = 2(e^t - 1)
 ```
+The plot of this solution over time is saved as `sample_output_first_order.png`.
+
+### Sample Input for Second-order ODE
+```
+Choose the type of differential equation to solve:
+1. First-order linear ODE (dy/dt = a*y + b)
+2. Second-order linear ODE (d2y/dt2 = a*y + b*dy + c)
+Enter 1 or 2: 2
+Enter the coefficient a: 1
+Enter the coefficient b: -2
+Enter the coefficient c: 1
+Enter the initial condition y(0): 0
+Enter the initial condition dy/dt(0): 1
+```
+
+### Sample Output for Second-order ODE
+For the input coefficients a = 1, b = -2, c = 1, and the initial conditions y(0) = 0 and dy/dt(0) = 1, the solution of the second-order differential equation d2y/dt2 = y - 2*dy/dt + 1 is:
+```
+y(t) = e^t - t - 1
+```
+The plot of this solution over time is saved as `sample_output_second_order.png`.
 
 ## Dependencies
 
