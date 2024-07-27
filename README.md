@@ -54,6 +54,7 @@ y(t) = 2(e^t - 1)
 ```
 The plot of this solution over time is saved as `sample_output_first_order.png`.
 
+
 ### Sample Input for Second-order ODE
 ```
 Choose the type of differential equation to solve:
@@ -73,6 +74,7 @@ For the input coefficients a = 1, b = -2, c = 1, and the initial conditions y(0)
 y(t) = e^t - t - 1
 ```
 The plot of this solution over time is saved as `sample_output_second_order.png`.
+![combined_ode_solutions_side_by_side](https://github.com/user-attachments/assets/e627bfe2-1d73-4d25-bb8d-af86bc6a065a)
 
 ## Dependencies
 
