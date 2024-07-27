@@ -39,11 +39,9 @@ After running the script, you will be prompted to enter the coefficients and ini
 ### Sample Input for First-order ODE
 ```
 Choose the type of differential equation to solve:
-1. First-order linear ODE (<code>dy/dt = a*y + b</code>)
-2. Second-order linear ODE (<code>d<sup>2</sup>y/dt<sup>2</sup> = a*y + b*dy/dt + c</code>)
-Enter 1 or 2: 1
-Enter the coefficient a: 1
-Enter the coefficient b: 2
+1. First-order linear ODE (dy/dt = a*y + b)
+2. Second-order linear ODE (d2y/dt2 = a*y + b*dy + c)Enter 1 or 2: 1
+Enter the coefficient a: 1Enter the coefficient b: 2
 Enter the initial condition y(0): 0
 ```
 
