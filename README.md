@@ -12,7 +12,7 @@ This project contains Python code for solving basic differential equations using
 
 1. Clone the repository:
     ```
-    git clone https://github.com/yourusername/Diff-Cult-Equations.git
+    git clone https://github.com/Chinilshik-kalkulatorov/Diff-Cult-Equations.git
     ```
 
 2. Navigate to the project directory:
