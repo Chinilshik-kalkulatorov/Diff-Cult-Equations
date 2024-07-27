@@ -5,8 +5,8 @@ This project contains Python code for solving basic differential equations using
 
 ## Operations Included
 
-1. Solving a first-order linear differential equation (dy/dt = a*y + b)
-2. Solving a second-order linear differential equation (d2y/dt2 = a*y + b*dy + c)
+1. Solving a first-order linear differential equation <code>\( \frac{dy}{dt} = a \cdot y + b \)</code>
+2. Solving a second-order linear differential equation <code>\( \frac{d^2y}{dt^2} = a \cdot y + b \cdot \frac{dy}{dt} + c \)</code>
 
 ## How to Use
 
