@@ -2,12 +2,6 @@ import numpy as np
 from scipy.integrate import odeint
 import matplotlib.pyplot as plt
 
-def input_differential_equation():
-    print("Enter the coefficients for the differential equation dy/dt = a*y + b:")
-    a = float(input("a: "))
-    b = float(input("b: "))
-    return a, b
-
 def solve_first_order_ode(a, b, y0, t):
     def model(y, t):
         return a * y + b
@@ -34,7 +28,8 @@ def main():
     t = np.linspace(0, 10, 100)
     
     if choice == 1:
-        a, b = input_differential_equation()
+        a = float(input("Enter the coefficient a: "))
+        b = float(input("Enter the coefficient b: "))
         y0 = float(input("Enter the initial condition y(0): "))
         y = solve_first_order_ode(a, b, y0, t)
         plt.plot(t, y)
@@ -44,10 +39,9 @@ def main():
         plt.show()
 
     elif choice == 2:
-        print("Enter the coefficients for the differential equation d2y/dt2 = a*y + b*dy + c:")
-        a = float(input("a: "))
-        b = float(input("b: "))
-        c = float(input("c: "))
+        a = float(input("Enter the coefficient a: "))
+        b = float(input("Enter the coefficient b: "))
+        c = float(input("Enter the coefficient c: "))
         y0 = float(input("Enter the initial condition y(0): "))
         y1 = float(input("Enter the initial condition dy/dt(0): "))
         y = solve_second_order_ode(a, b, c, y0, y1, t)
